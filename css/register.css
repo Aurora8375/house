@@ -1,0 +1,92 @@
+html{
+    font-size: 10px;
+    background-color: #eee;
+}
+.title{
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left: 2rem;
+    background-color: #fff;
+}
+.register li{
+    list-style: none;
+    padding: 0 2rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #fff;
+    
+}
+.register input{
+    height: 5rem;
+    border: none;
+    outline: none;
+    vertical-align: top;
+    width: 100%;
+    font-size: 1rem;
+}
+.register .mima{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.register .mima input{
+    width: 60%;
+}
+.verify{
+    border: 1px solid #dcdcdc;
+    font-size: 1.4rem;
+    color: #999;
+    text-decoration: none;
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 1rem;
+}
+.register .registerBtn{
+    width: 35rem;
+    height: 5rem;
+    background: #ff8a00;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 2rem 1.2rem;
+}
+nav{
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    line-height: 5rem;
+    border-bottom: 4px solid #d1d1d1;
+    background-color: #fff;
+    font-size: 1.4rem;
+}
+nav>div{
+    flex: 1;
+    text-align: center;
+    height: 5rem;
+    
+}
+.red{
+    border-bottom: 4px solid #ff8a00;
+}
+.verification{
+    display: none;
+}
+section:nth-of-type(4){
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+section:nth-of-type(4)>a:nth-of-type(1){
+    color: #ff8a00;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+section:nth-of-type(4)>a:nth-of-type(2){
+    color: #666;
+    font-size: 1.6rem;
+    text-decoration: none;
+}

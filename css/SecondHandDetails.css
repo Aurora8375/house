@@ -1,0 +1,367 @@
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* 轮播图 */
+main{
+    width: 100%;
+    overflow: hidden;
+    background-color: #eee;
+}
+.swiper-container{
+    width: 100%;
+}
+.swiper-container img{
+    width: 100%;
+}
+
+main .title{
+    margin: 0;
+    padding: 2rem;
+    background-color: #fff;
+}
+.title h2{
+    font-size: 2rem;
+}
+.title>p:nth-of-type(1){
+    font-size: 1.6rem;
+    background: url(../image/SecondHandList/phone.png) right center no-repeat;
+    background-size: contain;
+    margin: 1rem 0;
+}
+.title>p:nth-of-type(1)>span{
+    color: #db4c3f;
+    font-weight: bolder;
+}
+.title>p:nth-of-type(2){
+    color: #999;
+}
+.title>p:nth-of-type(3){
+    margin-top: 1.5rem;
+}
+.title>p:nth-of-type(3)>span{
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background: #dee9f0;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+    color: #849aae;
+}
+
+/* 房源信息 */
+section{
+    padding: 0 2rem;
+    background-color: #fff;
+    margin-top: 1.5rem;
+}
+.house-message li{
+    display: flex;
+    height: 6rem;
+    line-height: 6rem;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 1.4rem;
+}
+.house-message li div{
+    width: 50%;
+}
+.house-much{
+    width: 100%;
+    height: 6rem;
+    font-size: 1.4rem;
+    line-height: 6rem;
+    text-align: center;
+    color: #999;
+}
+
+/* 房源特色 */
+.ts{
+    font-size: 2rem;
+    line-height: 5rem;
+    color: #ff9326;
+    border-bottom: 1px solid #e5e5e5;
+}
+.feature>p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1.5rem 0;
+}
+
+ /* 户型分间 */
+.pattern li{
+    display: flex;
+    padding: 2rem 0;
+    height: 8rem;
+
+}
+.pattern .left{
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+}
+.pattern .left>img{
+    width: 100%;
+    height: 100%;
+}
+.pattern .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pattern .right>h2{
+    font-size: 1.6rem;
+}
+.pattern .right>p:nth-of-type(1){
+    font-size: 1.4rem;
+    color: #666;
+}
+.pattern .right>p:nth-of-type(2)>span{
+    display: inline-block;
+    color: #849aae;
+    background: #f4f7f9;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+.gj{
+    border-bottom: 1px solid #ff8a00;
+}
+
+/* 对口学校 */
+
+section>.xx{
+    color: #000;
+}
+.school ul>li>span{
+    color: #999;
+}
+.location{
+    overflow: hidden;
+}
+.location>div{
+    margin: 2rem 0;
+}
+.location>div>iframe{
+    width: 100%;
+    height: 20rem;
+}
+
+/* 推荐房源 */
+.houseList>li{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.houseList>li>div:nth-of-type(1){
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.houseList>li>div:nth-of-type(1) img{
+    width: 90%;
+}
+.houseList>li>div:nth-of-type(2){
+    width: 67%;
+    
+}
+
+.houseList .text>h3{
+    width: 100%;
+    font-size: 2.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.houseList .text p{
+    margin: 0.5rem 0;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+.houseList .text p:nth-of-type(1)>strong{
+    color: #ff8a00;
+    float: right;
+}
+.houseList .text p:nth-of-type(2){
+   color: #999;
+}
+.houseList .text p:nth-of-type(2)>span{
+   float: right;
+}
+.houseList .text p:nth-of-type(3){
+    display: inline-block;
+   color: #849aae;
+    background: #f4f7f9;
+    padding: 0.5rem;
+}
+.tips{
+    width: 100%;
+    background: #f2f2f2;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+.tips>span{
+
+    position: absolute;
+    top: -1.9rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-bottom: 1rem solid #f2f2f2;
+    border-left: 1rem solid transparent;
+    z-index: 10;
+    margin-left: 0.4rem;
+}
+
+/* 租房详情页 */
+/* 头部导航栏 */
+
+.nav{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    padding: 0 2rem;
+}
+main>.top-title{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+main>.top-title>div{
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+}
+main>.top-title h2{
+    height: 5rem;
+    width: 69%;
+    padding: 1.5rem 0 1.5rem 2rem;
+}
+main>.top-title>div>a{
+    background: url(../image/rentalList/xin.png) 3.4rem 1.7rem no-repeat;
+    background-size: 2.2rem 2.2rem;
+    width: 25%;
+    height: 8rem;
+    border-left: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 4.5rem;
+    font-size: 1.4rem;
+    color: #999;
+}
+.houseMes1{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #eee;
+    padding: 3rem 0;
+}
+.houseMes1>li{
+    height: 4rem;
+    font-size: 1.2rem;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid #dcdcdc;
+}
+.houseMes1>li:nth-of-type(1){
+    border: none;
+}
+.houseMes1>li>div:nth-of-type(2){
+    color: #ff8a00;
+}
+
+main>.house-style{
+    margin: 0;
+}
+
+/* 经纪人房评 */
+main>.house-evaluate{
+    border: 1px solid #dad9d9;
+    margin:1rem;
+    padding: 0;
+}
+main>.house-evaluate>h2{
+    padding: 0 1.5rem;
+    background: url(../image/rentalList/right.png) 32rem center no-repeat;
+    background-size: 0.7rem 1.4rem;
+}
+main>.house-evaluate>p{
+    padding:1.5rem;
+    border: none;
+}
+/* 位置及周边 */
+main>.location>.hc{
+    margin: 1rem;
+    border: 1px solid #dad9d9;
+}
+main>.location>.hc>h3{
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-bottom: 1px solid #dad9d9;
+}
+
+/* 小区成交历史 */
+main>.house-h>p{
+    padding: 0.7rem 1.5rem;
+}
+main>.house-h>p>span{
+    color: #de6843;
+}
+
+/* 联系人 */
+
+.rentalpart6 {
+    padding: 0;
+    background: #ffffff;
+    display: flex;
+    height: 6rem;
+}
+.rentalpart6 .man {
+    display: flex;
+    flex: 63;
+    padding: 1rem;
+}
+.rentalpart6 .man img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+}
+.rentalpart6 .man div{
+    font-size: 1.4rem;
+}
+.rentalpart6 .phone {
+    flex: 37;
+    display: flex;
+    margin-top: 0.5rem;
+}
+.rentalpart6 .phone a {
+    display: inline-block;
+    flex: 1;
+    padding-top: 3.5rem;
+    padding-left: 0.5rem;
+}
+.rentalpart6 .phone a:first-of-type {
+    color: #5dcb96;
+    background: url(../image/rentalList/icon1.png) 0 0 no-repeat;
+    background-size: 3.5rem 3.5rem;
+}
+.rentalpart6 .phone a:last-of-type {
+    color: #5baede;
+    background: url(../image/rentalList/icon2.png) 0 0 no-repeat;
+    background-size: 3.5rem 3.5rem;
+}
+    
