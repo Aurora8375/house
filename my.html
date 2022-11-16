@@ -21,7 +21,7 @@
                 </a>
             </div>
             <img src="./image/my/urse2.png" alt="">
-            <a href="./enter.html">登录</a>
+            <a href="./enter.html" class="en">登录</a>
         </header>
         <main>
             <ul>
@@ -43,6 +43,8 @@
                 </li>
             </ul>
         </main>
+
+        <div class="back">退出登录</div>
     </div>
 
 </body>
@@ -51,6 +53,15 @@
 <script src="./js/setRem.js"></script>
 <script src="./js/touch-0.2.14.min.js"></script>
 <script>
+    function getCookie(key) {
+        var array = document.cookie.split("; ")
+        for (var item of array) {
+            var newArray = item.split("=")
+            if (newArray[0] == key) {
+                return newArray[1];
+            }
+        }
+    }
     var html_ = document.getElementsByTagName('html')[0];
     touch.on(html_, 'swipeleft', function () {
         history.forward()
@@ -71,5 +82,21 @@
     on_click[3].onclick = function () {
         window.location.href = './rentalDetails.html'
     }
-
+    var num = Boolean(getCookie('user'))
+    var en = document.getElementsByClassName('en')[0]
+    var back = document.getElementsByClassName('back')[0];
+    if (num == true) {
+        en.style.border = 'none'
+        en.style.width = '16rem'
+        en.style.left = '11rem'
+        en.innerHTML = '欢迎你，' + getCookie('user')
+        back.style.display = 'block'
+    }
+    touch.on(back, 'tap', function () {
+        en.style.border = '.1rem solid #fff'
+        en.style.width = '9rem'
+        en.style.left = '14rem'
+        en.innerHTML = '登录'
+        back.style.display = 'none'
+    })
 </script>
