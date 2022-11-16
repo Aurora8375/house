@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>我的</title>
     <link rel="stylesheet" href="./css/my.css">
 </head>
 
@@ -13,7 +13,7 @@
     <div class="box">
         <header>
             <div class="Htop">
-                <a href="#">
+                <a href="./index.html">
                     我的
                 </a>
                 <a href="#">
@@ -21,23 +21,23 @@
                 </a>
             </div>
             <img src="./image/my/urse2.png" alt="">
-            <a>登录</a>
+            <a href="./enter.html">登录</a>
         </header>
         <main>
             <ul>
-                <li>
+                <li class="on_click">
                     <img src="image/my/icon1.png" alt="">
                     <a href="#">我关注的房源</a>
                 </li>
-                <li>
+                <li class="on_click">
                     <img src="image/my/icon2.png" alt="">
                     <a href="#">我关注的小区</a>
                 </li>
-                <li>
+                <li class="on_click">
                     <img src="image/my/icon3.png" alt="">
                     <a href="#">我关注的新房</a>
                 </li>
-                <li>
+                <li class="on_click">
                     <img src="image/my/icon4.png" alt="">
                     <a href="#">我的看房记录</a>
                 </li>
@@ -49,3 +49,27 @@
 
 </html>
 <script src="./js/setRem.js"></script>
+<script src="./js/touch-0.2.14.min.js"></script>
+<script>
+    var html_ = document.getElementsByTagName('html')[0];
+    touch.on(html_, 'swipeleft', function () {
+        history.forward()
+    })
+    touch.on(html_, 'swiperight', function () {
+        history.back()
+    })
+    var on_click = document.getElementsByClassName('on_click');
+    on_click[0].onclick = function () {
+        window.location.href = './rentalDetails.html'
+    }
+    on_click[1].onclick = function () {
+        window.location.href = './myHouse.html'
+    }
+    on_click[2].onclick = function () {
+        window.location.href = './SecondHandDetails.html'
+    }
+    on_click[3].onclick = function () {
+        window.location.href = './rentalDetails.html'
+    }
+
+</script>

@@ -15,13 +15,14 @@
     <div class="box">
         <!--头部-->
         <header>
-            <h1><a href="#"><img src="image/index/logo.jpg" alt="" /></a></h1>
+            <h1><a href="./index.html"><img src="image/index/logo.jpg" alt="" /></a></h1>
 
             <div class="icon">
-                <a href="#"><img src="image/index/my.jpg" alt="" /></a>
+                <a href="./my.html"><img src="image/index/my.jpg" alt="" /></a>
                 <a href="#"><img src="image/index/xiazai.jpg" alt="" /></a>
             </div>
         </header>
+
         <div class="box2">
             <input type="search" placeholder="请输入小区名或商圈名称">
             <span>|</span>
@@ -286,3 +287,13 @@
 </html>
 <script src="./js/setRem.js"></script>
 <script src="./js/cs.js"></script>
+<script src="./js/touch-0.2.14.min.js"></script>
+<script>
+    var html_ = document.getElementsByTagName('html')[0];
+    touch.on(html_, 'swipeleft', function () {
+        history.forward()
+    })
+    touch.on(html_, 'swiperight', function () {
+        history.back()
+    })
+</script>
