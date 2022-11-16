@@ -3,7 +3,7 @@
     padding: 0;
 }
 .box{
-    max-width: 800px;
+    max-width: 900px;
     min-width: 350px;
     margin: 0 auto;
     width: 100%;
@@ -68,15 +68,7 @@
     line-height: 6rem;
    
 }
-.box6>ul>.li{
-    background: url(../image/rentalList/icon-pullup.png) no-repeat 4rem 2.5rem;
-    background-size: 1.2rem;
-}
-.box6>ul>li>h2>.red{
-    color: #ff8a00;
-    
 
-}
 .box6>ul>li>h2>a,
 .box3>ul>li>h2>a{
     text-decoration: none;
@@ -85,18 +77,19 @@
     font-weight: 800;
   
 }
+
 .box5{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.452);
-    position: absolute;
+    position: fixed;
     top: 0rem;
     left: 0rem;
     display: none;
 }
 .box6{
      width: 100%;
-    height: 37rem;
+    /* height: 37rem; */
     background-color: #fff;
    
 }
@@ -105,19 +98,19 @@
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    background-color: #fff;
 }
 .box7{
     width: 100%;
     height: 30.5rem;
-    display: flex;
-    justify-content: space-between;
+  
     /* display: none; */
 }
 .left{
     width: 20%;
     height: 100%;
     background-color: #eee;
-
+float: left;
 }
 .left>p{
     width: 100%;
@@ -141,6 +134,7 @@
     height: 100%;
     display: flex;
     background-color: #fff;
+    float: right;
 }
 .right>ul{
     width: 50%;
@@ -162,7 +156,8 @@
 .box9{
     width: 100%;
     height: 30.5rem;
-    display: none;
+    /* display: none; */
+    background-color: #fff;
 }
 .box8>ul,
 .box9>ul{
@@ -203,7 +198,8 @@
     width: 100%;
     height: 60rem;
     background-color: #fff;
-    display: none;
+    /* display: none; */
+    margin-top: -1rem;
 }
 .box10>ul{
     width: 100%;
@@ -341,4 +337,23 @@
 
 }
 
+/* js部分 */
+.box3>ul>.li{
+    background: url(../image/rentalList/icon-pullup.png) no-repeat 4rem 2.5rem;
+    background-size: 1.2rem;
+}
+.box3>ul>li>h2>.red{
+    color: #ff8a00;
+    
 
+}
+
+.box6>ul>.li{
+    background: url(../image/rentalList/icon-pullup.png) no-repeat 4rem 2.5rem;
+    background-size: 1.2rem;
+}
+.box6>ul>li>h2>.red{
+    color: #ff8a00;
+    
+
+}
